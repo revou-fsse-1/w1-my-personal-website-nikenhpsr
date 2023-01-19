@@ -1,15 +1,6 @@
-:root {
-	--color-dark-bg: rgba(15, 13, 14);
-	--color-dark-accent: rgba(30, 30, 30);
-	--color-foreground: rgba(249, 244, 218);
-	--color-foreground-accent: rgba(178, 174, 156);
-	--color-red: rgba(237, 32, 61);
-	--color-yellow: rgba(252, 186, 40);
-}
-
 body {
   margin: 0;
-  margin-top: 50px;
+  margin-top: 0px;
   font-family: sans-serif;}
 
 header {
