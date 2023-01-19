@@ -1,48 +1,91 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-* {
-  background-color: blanchedalmond;
-  font-family: sans-serif;
-  background: #3e5151; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #decba4,
-    #3e5151
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #decba4,
-    #3e5151
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+:root {
+	--color-dark-bg: rgba(15, 13, 14);
+	--color-dark-accent: rgba(30, 30, 30);
+	--color-foreground: rgba(249, 244, 218);
+	--color-foreground-accent: rgba(178, 174, 156);
+	--color-red: rgba(237, 32, 61);
+	--color-yellow: rgba(252, 186, 40);
 }
 
-/* header styling */
+body {
+  margin: 0;
+  margin-top: 50px;
+  font-family: sans-serif;}
+
 header {
-  font-size: 32px;
-  color: blue;
-  background-color: rgb(70, 70, 70);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #eee;
 }
 
-.intro1 {
-  font-size: 20px;
-  color: rgb(20, 80, 0);
+header * {
+  display: inline;
+  height: 50px;
 }
 
-.intro1:hover {
-  color: blue;
+header ul {
+  padding: 0;
 }
 
-#intro2 {
-  font-size: 20px;
-  color: saddlebrown;
-  font-style: italic;
-  font-family: "Poppins", sans-serif;
+header li {
+  margin-left: 20px;
 }
 
-input[type="text"] {
-  padding: 5px;
-  width: 200px;
-  height: 200px;
-  color: black;
+section {
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  background-size: cover; /* Add this line */
+  background-position: center center; /* Add this line */
+  background-repeat: no-repeat; /* Add this line */
+  background-attachment: fixed; /* Add this line */
+}
+
+#hero .profile-img {
+  width: 300px;
   border-radius: 50%;
 }
+
+footer {
+  text-align: center;
+  padding: 50px;
+}
+
+#hero h1 {
+  font-size: 3em;
+}
+
+section h2 {
+  font-size: 2.5em;
+}
+
+section h3 {
+  font-size: 1.5em;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Add everything below here */
+
+#hero {
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/field.jpg');
+}
+
+#about {
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg');
+}
+
+#contact {
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/canyon.jpg');
