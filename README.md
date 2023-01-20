@@ -34,5 +34,5 @@ https://nikenhpsr.netlify.app/
 ## References
 
 - Color names : [ArtyClick Colors](https://colors.artyclick.com/color-name-finder/)
-- Color palette : [Dopely Colors - Chrome Extentions](https://colors.dopely.top/)
+- Color palette : [Dopely Colors - Chrome Extensions](https://colors.dopely.top/)
 - Font used : [Josefin Sans](https://fonts.googleapis.com/css?family=Josefin%20Sans)
