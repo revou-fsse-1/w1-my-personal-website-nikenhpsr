@@ -24,12 +24,9 @@ https://nikenhpsr.netlify.app/
 
 ## 🚥Colors Used
 
-| Name            | Code    |
-| :-------------- | :------ |
-| Black           | #030200 |
-| White           | #FFFFFF |
-| Shade of Pink   | #F9004D |
-| Shade of Purple | #FCFC   |
-
-
-
+| Name        | Code    |
+| :---------- | :------ |
+| Black       | #030200 |
+| White       | #FFFFFF |
+| Pinkish Red | #F9004D |
+| Soapstone   | #FCFC   |
