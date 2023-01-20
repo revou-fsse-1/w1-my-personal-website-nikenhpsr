@@ -52,7 +52,7 @@ nav ul li a:hover {
 .content {
   position: absolute;
   top: 50%;
-  left: 8%;
+  left: 32%;
   transform: translateY(-50%);
   margin-top: 25px;
 }
@@ -63,22 +63,19 @@ h1 {
   font-size: 75px;
 }
 
-h3 {
-  color: white;
-  font-size: 25px;
-  margin-bottom: 50px;
-}
-
 h4 {
   color: #fcfc;
   letter-spacing: 2px;
   font-size: 20px;
+  position: relative;
+  left: 35%;
 }
 
 .newsletter form {
   width: 380px;
   max-width: 100%;
   position: relative;
+  left: 15%;
 }
 
 .newsletter form input {
@@ -149,11 +146,19 @@ h4 {
   text-transform: capitalize;
 }
 
+.about-text p {
+  color: #fcfc;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
 span {
   color: #f9004d;
 }
 
-.about-text p {
+.projects {
   color: #fcfc;
   letter-spacing: 1px;
   line-height: 28px;
