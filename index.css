@@ -1,96 +1,213 @@
-body {
-  margin: 0;
-  margin-top: 0px;
-  font-family: sans-serif;
-}
-
-header {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 50px;
-  height: 50px;
-  line-height: 50px;
-  background-color: #eee;
-}
-
-header * {
-  display: inline;
-  height: 50px;
-}
-
-header ul {
+* {
+  background-color: rgb(3, 2, 0);
   padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
 }
 
-header li {
-  margin-left: 20px;
-}
-
-section {
+.hero {
   height: 100vh;
-  border: 1px solid black;
+  width: 100%;
+}
+
+.navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-
-  background-size: cover; /* Add this line */
-  background-position: center center; /* Add this line */
-  background-repeat: no-repeat; /* Add this line */
-  background-attachment: fixed; /* Add this line */
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
-#hero .profile-img {
-  width: 300px;
-  border-radius: 50%;
+.logo {
+  position: relative;
 }
 
-footer {
-  text-align: center;
-  padding: 50px;
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 25px;
 }
 
-#hero h1 {
-  font-size: 3em;
+nav ul {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  padding: 5px;
 }
 
-section h2 {
-  font-size: 2.5em;
-}
-
-section h3 {
-  font-size: 1.5em;
-}
-
-header a {
+nav ul li a {
+  color: white;
   text-decoration: none;
-  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
-/* Add everything below here */
+nav ul li a:hover {
+  color: #f9004d;
+  transition: 0.4s;
+}
 
-#hero {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ),
-    url("https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/field.jpg");
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  margin-top: 25px;
+}
+
+h1 {
+  color: white;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+}
+
+h3 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+h4 {
+  color: #fcfc;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.newsletter form {
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+
+.newsletter form input {
+  color: white;
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid #f9004d;
+  outline: none;
+  border-radius: 30px;
+}
+
+.newsletter form button {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #f9004d;
+  color: white;
+  box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+  top: 6px;
+  right: 6px;
 }
 
 #about {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ),
-    url("https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg");
+  height: 400px;
+  margin-top: 100px;
 }
 
-#contact {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ),
-    url("https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/canyon.jpg");
+.about-text {
+  width: 550px;
+}
+
+.primary {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.primary img {
+  width: 450px;
+  height: 300px;
+}
+
+.about-text h2 {
+  color: white;
+  font-size: 55px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.about-text h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+span {
+  color: #f9004d;
+}
+
+.about-text p {
+  color: #fcfc;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.about-text button:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+#contacts {
+  margin-top: 20px;
+  height: 400px;
+}
+
+.contact-me {
+  width: 100%;
+  height: 290px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-me p {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.contact-me a {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.contact-me a:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
