@@ -1,3 +1,3 @@
 function myFunction() {
-    alert("Oops, this feature doesn't exist yet!");
+    alert("Hi, nice to know you!");
   }
